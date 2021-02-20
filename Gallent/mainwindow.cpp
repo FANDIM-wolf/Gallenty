@@ -1,16 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "userwindow.h"
 #include <QDebug>
 #include <QMessageBox>
 #include <string>
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    window = new userwindow();
 }
 
 MainWindow::~MainWindow()
@@ -44,11 +41,3 @@ void MainWindow::on_pushButton_clicked()
     QMessageBox::information(this ,"Result", "Test done successfully");
 
 }
-
-//Function new user
-void MainWindow::on_newuser_triggered()
-{
-
-   window->show();
-}
-
