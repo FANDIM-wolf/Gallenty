@@ -20,7 +20,7 @@
       <x>70</x>
       <y>360</y>
       <width>181</width>
-      <height>61</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -111,8 +111,31 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuGallent">
+    <property name="title">
+     <string>Gallent</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuadd">
+    <property name="title">
+     <string>add</string>
+    </property>
+    <addaction name="newuser"/>
+   </widget>
+   <addaction name="menuGallent"/>
+   <addaction name="menuadd"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_User">
+   <property name="text">
+    <string>New User</string>
+   </property>
+  </action>
+  <action name="newuser">
+   <property name="text">
+    <string>new user</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
