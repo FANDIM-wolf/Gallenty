@@ -1,0 +1,15 @@
+﻿<Window x:Class="BASEnet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BASEnet"
+        mc:Ignorable="d"
+        Title="BaseNet" Height="450" Width="800">
+    <Grid>
+        <Button Content="Log in" HorizontalAlignment="Left" Margin="248,337,0,0" VerticalAlignment="Top" Width="181" Height="32" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="248,238,0,0" TextWrapping="Wrap" x:Name="Name" Text="Name" VerticalAlignment="Top" Width="181" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="248,282,0,0" TextWrapping="Wrap" x:Name="Password" Text="Password" VerticalAlignment="Top" Width="181" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
